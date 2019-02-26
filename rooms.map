@@ -1,0 +1,29 @@
+name Entrance
+north -1
+south -1
+east 2
+west 1
+
+name Office
+north -1
+south -1
+east 0
+west -1
+
+name Lounge
+north 3
+south -1
+east -1
+west 3
+
+name Kitchen
+north -1
+south -1
+east 2
+west 4
+
+name Hall
+north -1
+south -1
+east 3
+west -1
