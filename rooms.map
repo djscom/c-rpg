@@ -1,29 +1,39 @@
+#0
 name Entrance
 north -1
 south -1
-east 2
-west 1
+east 1
+west 2
+chance 2
 
+#1
 name Office
 north -1
 south -1
+east -1
+west 0
+chance 2
+
+#2
+name Lounge
+north -1
+south 3
 east 0
 west -1
+chance 2
 
-name Lounge
-north 3
+#3
+name Dining Room
+north 2
 south -1
-east -1
-west 3
+east 4
+west -1
+chance 2
 
+#4
 name Kitchen
 north -1
 south -1
-east 2
-west 4
-
-name Hall
-north -1
-south -1
-east 3
-west -1
+east -1
+west 3
+chance 2
