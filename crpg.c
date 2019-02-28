@@ -5,7 +5,7 @@
 void instructions(){
 	printf("\nReach the final room, and rescue the princess!\n");
 	printf("\n-------------------\n");
-	printf("Commands:\ngo [direction]\nget [item]\nattack\n");
+	printf("Commands:\ngo [direction]\nget [item]\nuse [item]\nattack\n");
 	printf("-------------------\n");
 }
 
@@ -25,9 +25,12 @@ int main(){
 	
 	while(1){
 		status();
+		do{
+			printf("\n> ");
+			fgets(command, 100, stdin);
+		}
+		while(command[0] == '\n');
 
-		printf("\n> ");
-		fgets(command, 100, stdin);
 		char *ptr = strtok(command, " \n");
 		move = strtok(NULL, "\n");
 
@@ -35,7 +38,10 @@ int main(){
 			go();
 		}
 		else if(strcmp(ptr, "get") == 0){
-			printf("\n*Not implemented yet.\n\n");
+			get();
+		}
+		else if(strcmp(ptr, "use") == 0){
+			use();
 		}
 		else if(strcmp(ptr, "attack") == 0){
 			if(!attack())
