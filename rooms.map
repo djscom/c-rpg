@@ -4,7 +4,7 @@ north -1
 south -1
 east 1
 west 2
-chance 2
+danger 15
 
 #1
 name Office
@@ -12,7 +12,7 @@ north -1
 south -1
 east -1
 west 0
-chance 2
+danger 12
 
 #2
 name Lounge
@@ -20,7 +20,7 @@ north -1
 south 3
 east 0
 west -1
-chance 2
+danger 12
 
 #3
 name Dining Room
@@ -28,12 +28,28 @@ north 2
 south -1
 east 4
 west -1
-chance 2
+danger 12
 
 #4
 name Kitchen
 north -1
 south -1
-east -1
+east 5
 west 3
-chance 2
+danger 12
+
+#5
+name Hall
+north -1
+south 6
+east -1
+west 4
+danger 12
+
+#6
+name Bedroom
+north 5
+south -1
+east -1
+west -1
+danger 1
